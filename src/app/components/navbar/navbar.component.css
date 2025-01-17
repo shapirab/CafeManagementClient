@@ -1,0 +1,16 @@
+.navbar{
+  padding: 1rem 3rem;
+}
+
+.navbar-brand img{
+  border-radius: 50%;
+}
+
+.navbar-nav{
+  flex-direction: row;
+}
+
+.nav-item{
+  margin-right: 1.5rem;
+  color: #eee;
+}
