@@ -5,3 +5,8 @@
 <div class="header__header">
   <h1 class="header__heading">Best Seller</h1>
 </div>
+<div class="header__body">
+  <div class="header__container" *ngFor="let category of categories">
+    <app-category-thumbnail [category]="category"></app-category-thumbnail>
+  </div>
+</div>

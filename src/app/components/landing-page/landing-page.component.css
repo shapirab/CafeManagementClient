@@ -17,3 +17,13 @@
 .header__heading{
   color: #676262;
 }
+
+.header__body{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.header__container{
+  perspective: 1000px;
+}

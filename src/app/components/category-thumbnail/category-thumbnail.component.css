@@ -1,0 +1,29 @@
+.container{
+  width: 100%;
+  height: 300px;
+  background-color: #436be5;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.front, .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.container.flip{
+  transform: rotateY(180deg);
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back{
+  transform: rotateY(180deg);
+}

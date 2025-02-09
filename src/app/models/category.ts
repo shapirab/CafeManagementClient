@@ -1,6 +1,6 @@
 export interface Category{
-  Id: number,
-  Name: string,
-  IsBestSeller: boolean,
-  Description?: string
+  id: number,
+  name: string,
+  isBestSeller?: boolean,
+  description?: string
 }
