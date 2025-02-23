@@ -8,10 +8,15 @@ import { Category } from 'src/app/models/category';
 })
 export class CategoryThumbnailComponent implements OnInit {
   @Input() category?: Category;
+  categoryIcon?: string;
   //flipped: boolean = false;
   constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if(this.category){
+      this.categoryIcon = '&#x' + this.category.iconCode;
+    }
+  }
 
   flipCard(event: any){
     event.currentTarget.classList.toggle('flip');

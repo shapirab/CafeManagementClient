@@ -26,4 +26,5 @@
 
 .header__container{
   perspective: 1000px;
+  padding: 0.7rem;
 }

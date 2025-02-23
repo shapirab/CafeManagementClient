@@ -7,6 +7,7 @@
   cursor: pointer;
   transform-style: preserve-3d;
   transition: transform 0.5s;
+  transition: transform 0.6s ease-in-out;
 }
 
 .front, .back{
@@ -22,8 +23,32 @@
 
 .front {
   transform: rotateY(0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .back{
   transform: rotateY(180deg);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back__title{
+  font-size: 2.5rem;
+}
+
+.back__body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fa {
+  font-family: 'FontAwesome';
+  font-size: 5rem;
 }

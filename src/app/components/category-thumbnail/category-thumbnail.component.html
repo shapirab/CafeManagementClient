@@ -1,8 +1,10 @@
-<div class="container" (click)="flipCard($event)">
+<!-- (mouseenter)="flipCard(true)" (mouseleave)="flipCard(false)" -->
+<div class="container" (mouseenter)="flipCard($event)" (mouseleave)="flipCard($event)">
   <div class="front">
-    {{category?.name}}
+    <div class="fa" [innerHTML]="categoryIcon"></div>
   </div>
   <div class="back">
-    {{category?.description}}
+    <div class="back__title">{{category?.name}}</div>
+    <div class="back__body">{{category?.description}}</div>
   </div>
 </div>

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CategoryThumbnailComponent } from './components/category-thumbnail/category-thumbnail.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CategoryThumbnailComponent } from './components/category-thumbnail/cate
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
