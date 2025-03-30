@@ -1,0 +1,9 @@
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 2;
+}
+
+.btn{
+  margin-left: 0.8rem;
+}

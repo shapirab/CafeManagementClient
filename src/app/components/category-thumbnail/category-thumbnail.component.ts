@@ -20,6 +20,5 @@ export class CategoryThumbnailComponent implements OnInit {
 
   flipCard(event: any){
     event.currentTarget.classList.toggle('flip');
-    console.log(event.currentTarget)
   }
 }

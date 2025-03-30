@@ -1,0 +1,9 @@
+.form--signup{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.form--signup__single-row{
+  grid-column: span 2;
+}
