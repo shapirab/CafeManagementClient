@@ -1,10 +1,10 @@
 export interface RegisterUserDto{
-  firstName: string,
-  lastName: string,
-  companyName: string,
-  contactNumber: string,
-  email: string,
-  userRole: string;
-  username: string,
-  password: string
+  FirstName?: string,
+  LastName?: string,
+  CompanyName: string,
+  ContactNumber: string,
+  Email: string,
+  UserRole?: number;
+  Username: string,
+  Password: string
 }
