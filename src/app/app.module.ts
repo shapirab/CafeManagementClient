@@ -17,6 +17,8 @@ import { RegisterFormComponent } from './components/shared/forms/register-form/r
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { LoginComponent } from './components/users/login/login.component';
+import { LoginFormComponent } from './components/shared/forms/login-form/login-form.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { MatInputModule } from '@angular/material/input';
     CategoryThumbnailComponent,
     RegisterComponent,
     FormNavComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    LoginComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,

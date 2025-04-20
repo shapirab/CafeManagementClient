@@ -1,0 +1,17 @@
+<div>
+  <form #signUpForm="ngForm" class="form--signup" (ngSubmit)="onSubmit(signUpForm.value)">
+    <mat-form-field appearance="outline" class="form--signup__single-row">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput placeholder="name" name="email" id="email" required ngModel>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput placeholder="Password" name="password" id="password" required ngModel>
+    </mat-form-field>
+    <div class="buttons">
+      <button type="submit" class="btn btn-primary" [disabled]="!signUpForm.valid"><i class="fas fa-sign-in-alt"></i> Login</button>
+      <button type="button" class="btn btn-danger"><i class="far fa-window-close" (click)="onClose()"></i> Close</button>
+    </div>
+  </form>
+</div>
