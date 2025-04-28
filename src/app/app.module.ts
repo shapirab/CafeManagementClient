@@ -4,9 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { LandingPageComponent } from './components/landing/landing-page/landing-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { CategoryThumbnailComponent } from './components/category-thumbnail/category-thumbnail.component';
+import { CategoryThumbnailComponent } from './components/landing/category-thumbnail/category-thumbnail.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RegisterComponent } from './components/users/register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,6 +19,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { LoginComponent } from './components/users/login/login.component';
 import { LoginFormComponent } from './components/shared/forms/login-form/login-form.component';
+import { DashboardComponent } from './components/features/dashboard/dashboard.component';
+import { NotFoundComponent } from './components/shared/not-found/not-found.component';
+import { NotAuthorizedComponent } from './components/shared/not-authorized/not-authorized.component';
 
 
 @NgModule({
@@ -31,7 +34,10 @@ import { LoginFormComponent } from './components/shared/forms/login-form/login-f
     FormNavComponent,
     RegisterFormComponent,
     LoginComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    DashboardComponent,
+    NotFoundComponent,
+    NotAuthorizedComponent
   ],
   imports: [
     BrowserModule,

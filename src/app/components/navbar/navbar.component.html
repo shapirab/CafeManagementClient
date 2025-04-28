@@ -3,9 +3,12 @@
     <img src="../../../assets/images/logoImg.jpg" width="30" height="30" alt="">
     Cafe Management System
   </a>
-  <div class="navbar-nav">
+  <div class="navbar-nav" *ngIf="!(authService.currentUser$ | async)">
     <a class="nav-item nav-link" (click)="login()">Login</a>
     <a class="nav-item nav-link" (click)="signUp()">Sign Up</a>
     <a class="nav-item nav-link">Forgot Password?</a>
+  </div>
+  <div class="navbar-nav" *ngIf="authService.currentUser$ | async as user">
+    Welcome {{user.username}}
   </div>
 </nav>

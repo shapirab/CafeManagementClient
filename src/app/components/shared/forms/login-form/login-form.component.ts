@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { LoginComponent } from 'src/app/components/users/login/login.component';
 import { UserLoginDto } from 'src/app/models/userLoginDto';
 import { AuthService } from 'src/app/services/auth.service';
@@ -11,7 +12,7 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class LoginFormComponent implements OnInit {
 
-  constructor(private dialogRef: MatDialogRef<LoginComponent>, private authService: AuthService) { }
+  constructor(private dialogRef: MatDialogRef<LoginComponent>, private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -23,7 +24,9 @@ export class LoginFormComponent implements OnInit {
     }
     this.authService.login(loginUser).subscribe({
       next: (res) =>  {
-        this.dialogRef.close()
+        this.dialogRef.close();
+        this.router.navigateByUrl('dashboard');
+
       },
       error: err => console.log(err)
     });
