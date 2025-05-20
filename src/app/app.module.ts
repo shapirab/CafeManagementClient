@@ -22,6 +22,12 @@ import { LoginFormComponent } from './components/shared/forms/login-form/login-f
 import { DashboardComponent } from './components/features/dashboard/dashboard.component';
 import { NotFoundComponent } from './components/shared/not-found/not-found.component';
 import { NotAuthorizedComponent } from './components/shared/not-authorized/not-authorized.component';
+import { LeftSidebarComponent } from './components/features/dashboard/left-sidebar/left-sidebar.component';
+import { SummaryComponent } from './components/features/dashboard/summary/summary.component';
+import { CategoriesComponent } from './components/features/dashboard/categories/categories.component';
+import { ProductsComponent } from './components/features/dashboard/products/products.component';
+import { OrdersComponent } from './components/features/dashboard/orders/orders.component';
+import { ContentComponent } from './components/features/dashboard/content/content.component';
 
 
 @NgModule({
@@ -37,7 +43,13 @@ import { NotAuthorizedComponent } from './components/shared/not-authorized/not-a
     LoginFormComponent,
     DashboardComponent,
     NotFoundComponent,
-    NotAuthorizedComponent
+    NotAuthorizedComponent,
+    LeftSidebarComponent,
+    SummaryComponent,
+    CategoriesComponent,
+    ProductsComponent,
+    OrdersComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
