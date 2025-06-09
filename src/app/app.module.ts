@@ -17,6 +17,7 @@ import { RegisterFormComponent } from './components/shared/forms/register-form/r
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
 import { LoginComponent } from './components/users/login/login.component';
 import { LoginFormComponent } from './components/shared/forms/login-form/login-form.component';
 import { DashboardComponent } from './components/features/dashboard/dashboard.component';
@@ -49,7 +50,7 @@ import { ContentComponent } from './components/features/dashboard/content/conten
     CategoriesComponent,
     ProductsComponent,
     OrdersComponent,
-    ContentComponent
+    ContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +61,7 @@ import { ContentComponent } from './components/features/dashboard/content/conten
     MatDialogModule,
     FormsModule,
     MatFormFieldModule,
+    MatCardModule,
     MatInputModule
   ],
   providers: [],
